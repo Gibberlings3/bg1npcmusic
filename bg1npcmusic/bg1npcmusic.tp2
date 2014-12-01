@@ -1,0 +1,93 @@
+BACKUP ~bg1npcmusic/backup~
+
+AUTHOR ~http://forums.gibberlings3.net/index.php?showforum=45~
+
+//MODDER
+
+README ~bg1npcmusic/readme-bg1npc_music.html~
+
+VERSION ~v6~
+
+BEGIN ~Install All Audio~
+  SUBCOMPONENT ~The BG1 NPC Project Music Pack~
+  UNINSTALL ~SETUP-MBG1NPC.TP2~ ~0~
+
+COPY_EXISTING ~sw1h01.itm~ ~override/bg1npcmusic.g3~
+
+MKDIR ~music/blank~
+COPY ~bg1npcmusic/blank.mus~ ~music~
+     ~bg1npcmusic/blank.acm~ ~music/blank/blanka.acm~
+
+COPY_EXISTING ~songlist.2da~ ~override~
+  SET_2DA_ENTRY 0 0 2 ~2DA_V1.0~
+  SET_2DA_ENTRY 0 1 2 ~~
+  SET_2DA_ENTRY 0 0 2 ~IDOBEK Name~
+  SET_2DA_ENTRY 1 2 3 ~BLANK.MUS~
+  SET_2DA_ENTRY 0 0 3 ~~
+  REPLACE_TEXTUALLY CASE_INSENSITIVE ~2DA_V1.0~ ~2DA V1.0~
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~bg1npcmusic/ogg/regular~
+    oggdec_path = ~bg1npcmusic~
+    sox_path = ~bg1npcmusic~
+END
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~bg1npcmusic/ogg/romance~
+    oggdec_path = ~bg1npcmusic~
+    sox_path = ~bg1npcmusic~
+END
+
+
+BEGIN ~Install Regular Audio Only~
+  SUBCOMPONENT ~The BG1 NPC Project Music Pack~
+  UNINSTALL ~SETUP-MBG1NPC.TP2~ ~0~
+
+COPY_EXISTING ~sw1h01.itm~ ~override/bg1npcmusic.g3~
+
+MKDIR ~music/blank~
+COPY ~bg1npcmusic/blank.mus~ ~music~
+     ~bg1npcmusic/blank.acm~ ~music/blank/blanka.acm~
+
+COPY_EXISTING ~songlist.2da~ ~override~
+  SET_2DA_ENTRY 0 0 2 ~2DA_V1.0~
+  SET_2DA_ENTRY 0 1 2 ~~
+  SET_2DA_ENTRY 0 0 2 ~IDOBEK Name~
+  SET_2DA_ENTRY 1 2 3 ~BLANK.MUS~
+  SET_2DA_ENTRY 0 0 3 ~~
+  REPLACE_TEXTUALLY CASE_INSENSITIVE ~2DA_V1.0~ ~2DA V1.0~
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~bg1npcmusic/ogg/regular~
+    oggdec_path = ~bg1npcmusic~
+    sox_path = ~bg1npcmusic~
+END
+
+
+BEGIN ~Install Romance Audio Only~
+  SUBCOMPONENT ~The BG1 NPC Project Music Pack~
+  UNINSTALL ~SETUP-MBG1NPC.TP2~ ~0~
+
+COPY_EXISTING ~sw1h01.itm~ ~override/bg1npcmusic.g3~
+
+MKDIR ~music/blank~
+COPY ~bg1npcmusic/blank.mus~ ~music~
+     ~bg1npcmusic/blank.acm~ ~music/blank/blanka.acm~
+
+COPY_EXISTING ~songlist.2da~ ~override~
+  SET_2DA_ENTRY 0 0 2 ~2DA_V1.0~
+  SET_2DA_ENTRY 0 1 2 ~~
+  SET_2DA_ENTRY 0 0 2 ~IDOBEK Name~
+  SET_2DA_ENTRY 1 2 3 ~BLANK.MUS~
+  SET_2DA_ENTRY 0 0 3 ~~
+  REPLACE_TEXTUALLY CASE_INSENSITIVE ~2DA_V1.0~ ~2DA V1.0~
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~bg1npcmusic/ogg/romance~
+    oggdec_path = ~bg1npcmusic~
+    sox_path = ~bg1npcmusic~
+END

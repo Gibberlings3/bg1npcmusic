@@ -28,16 +28,16 @@ COPY_EXISTING ~songlist.2da~ ~override~
 
 LAF HANDLE_AUDIO
   STR_VAR
-    audio_path = ~bg1npcmusic/ogg/regular~
-    oggdec_path = ~bg1npcmusic~
-    sox_path = ~bg1npcmusic~
+    audio_path = ~bg1npcmusic/audio/regular~
+    oggdec_path = ~bg1npcmusic/audio~
+    sox_path = ~bg1npcmusic/audio~
 END
 
 LAF HANDLE_AUDIO
   STR_VAR
-    audio_path = ~bg1npcmusic/ogg/romance~
-    oggdec_path = ~bg1npcmusic~
-    sox_path = ~bg1npcmusic~
+    audio_path = ~bg1npcmusic/audio/romance~
+    oggdec_path = ~bg1npcmusic/audio~
+    sox_path = ~bg1npcmusic/audio~
 END
 
 
@@ -61,9 +61,9 @@ COPY_EXISTING ~songlist.2da~ ~override~
 
 LAF HANDLE_AUDIO
   STR_VAR
-    audio_path = ~bg1npcmusic/ogg/regular~
-    oggdec_path = ~bg1npcmusic~
-    sox_path = ~bg1npcmusic~
+    audio_path = ~bg1npcmusic/audio/regular~
+    oggdec_path = ~bg1npcmusic/audio~
+    sox_path = ~bg1npcmusic/audio~
 END
 
 
@@ -87,7 +87,7 @@ COPY_EXISTING ~songlist.2da~ ~override~
 
 LAF HANDLE_AUDIO
   STR_VAR
-    audio_path = ~bg1npcmusic/ogg/romance~
-    oggdec_path = ~bg1npcmusic~
-    sox_path = ~bg1npcmusic~
+    audio_path = ~bg1npcmusic/audio/romance~
+    oggdec_path = ~bg1npcmusic/audio~
+    sox_path = ~bg1npcmusic/audio~
 END

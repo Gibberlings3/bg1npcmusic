@@ -8,23 +8,25 @@ README ~bg1npcmusic/readme-bg1npc_music.html~
 
 VERSION ~v6~
 
+ALWAYS
+	COPY_EXISTING ~sw1h01.itm~ ~override/bg1npcmusic.g3~
+
+	MKDIR ~music/blank~
+	COPY ~bg1npcmusic/blank.mus~ ~music~
+		~bg1npcmusic/blank.acm~ ~music/blank/blanka.acm~
+
+	COPY_EXISTING ~songlist.2da~ ~override~
+  		SET_2DA_ENTRY 0 0 2 ~2DA_V1.0~
+  		SET_2DA_ENTRY 0 1 2 ~~
+  		SET_2DA_ENTRY 0 0 2 ~IDOBEK Name~
+  		SET_2DA_ENTRY 1 2 3 ~BLANK.MUS~
+  		SET_2DA_ENTRY 0 0 3 ~~
+  		REPLACE_TEXTUALLY CASE_INSENSITIVE ~2DA_V1.0~ ~2DA V1.0~
+END // ALWAYS
+
 BEGIN ~Install All Audio~
   SUBCOMPONENT ~The BG1 NPC Project Music Pack~
   UNINSTALL ~SETUP-MBG1NPC.TP2~ ~0~
-
-COPY_EXISTING ~sw1h01.itm~ ~override/bg1npcmusic.g3~
-
-MKDIR ~music/blank~
-COPY ~bg1npcmusic/blank.mus~ ~music~
-     ~bg1npcmusic/blank.acm~ ~music/blank/blanka.acm~
-
-COPY_EXISTING ~songlist.2da~ ~override~
-  SET_2DA_ENTRY 0 0 2 ~2DA_V1.0~
-  SET_2DA_ENTRY 0 1 2 ~~
-  SET_2DA_ENTRY 0 0 2 ~IDOBEK Name~
-  SET_2DA_ENTRY 1 2 3 ~BLANK.MUS~
-  SET_2DA_ENTRY 0 0 3 ~~
-  REPLACE_TEXTUALLY CASE_INSENSITIVE ~2DA_V1.0~ ~2DA V1.0~
 
 LAF HANDLE_AUDIO
   STR_VAR
@@ -45,20 +47,6 @@ BEGIN ~Install Regular Audio Only~
   SUBCOMPONENT ~The BG1 NPC Project Music Pack~
   UNINSTALL ~SETUP-MBG1NPC.TP2~ ~0~
 
-COPY_EXISTING ~sw1h01.itm~ ~override/bg1npcmusic.g3~
-
-MKDIR ~music/blank~
-COPY ~bg1npcmusic/blank.mus~ ~music~
-     ~bg1npcmusic/blank.acm~ ~music/blank/blanka.acm~
-
-COPY_EXISTING ~songlist.2da~ ~override~
-  SET_2DA_ENTRY 0 0 2 ~2DA_V1.0~
-  SET_2DA_ENTRY 0 1 2 ~~
-  SET_2DA_ENTRY 0 0 2 ~IDOBEK Name~
-  SET_2DA_ENTRY 1 2 3 ~BLANK.MUS~
-  SET_2DA_ENTRY 0 0 3 ~~
-  REPLACE_TEXTUALLY CASE_INSENSITIVE ~2DA_V1.0~ ~2DA V1.0~
-
 LAF HANDLE_AUDIO
   STR_VAR
     audio_path = ~bg1npcmusic/audio/regular~
@@ -71,23 +59,51 @@ BEGIN ~Install Romance Audio Only~
   SUBCOMPONENT ~The BG1 NPC Project Music Pack~
   UNINSTALL ~SETUP-MBG1NPC.TP2~ ~0~
 
-COPY_EXISTING ~sw1h01.itm~ ~override/bg1npcmusic.g3~
-
-MKDIR ~music/blank~
-COPY ~bg1npcmusic/blank.mus~ ~music~
-     ~bg1npcmusic/blank.acm~ ~music/blank/blanka.acm~
-
-COPY_EXISTING ~songlist.2da~ ~override~
-  SET_2DA_ENTRY 0 0 2 ~2DA_V1.0~
-  SET_2DA_ENTRY 0 1 2 ~~
-  SET_2DA_ENTRY 0 0 2 ~IDOBEK Name~
-  SET_2DA_ENTRY 1 2 3 ~BLANK.MUS~
-  SET_2DA_ENTRY 0 0 3 ~~
-  REPLACE_TEXTUALLY CASE_INSENSITIVE ~2DA_V1.0~ ~2DA V1.0~
-
 LAF HANDLE_AUDIO
   STR_VAR
     audio_path = ~bg1npcmusic/audio/romance~
+    oggdec_path = ~bg1npcmusic/audio~
+    sox_path = ~bg1npcmusic/audio~
+END
+
+BEGIN ~Install All Audio - Short versions~
+  SUBCOMPONENT ~The BG1 NPC Project Music Pack~
+  UNINSTALL ~SETUP-MBG1NPC.TP2~ ~0~
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~bg1npcmusic/audio/reg-short~
+    oggdec_path = ~bg1npcmusic/audio~
+    sox_path = ~bg1npcmusic/audio~
+END
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~bg1npcmusic/audio/rom-short~
+    oggdec_path = ~bg1npcmusic/audio~
+    sox_path = ~bg1npcmusic/audio~
+END
+
+
+BEGIN ~Install Regular Audio Only - Short versions~
+  SUBCOMPONENT ~The BG1 NPC Project Music Pack~
+  UNINSTALL ~SETUP-MBG1NPC.TP2~ ~0~
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~bg1npcmusic/audio/reg-short~
+    oggdec_path = ~bg1npcmusic/audio~
+    sox_path = ~bg1npcmusic/audio~
+END
+
+
+BEGIN ~Install Romance Audio Only - Short versions~
+  SUBCOMPONENT ~The BG1 NPC Project Music Pack~
+  UNINSTALL ~SETUP-MBG1NPC.TP2~ ~0~
+
+LAF HANDLE_AUDIO
+  STR_VAR
+    audio_path = ~bg1npcmusic/audio/rom-short~
     oggdec_path = ~bg1npcmusic/audio~
     sox_path = ~bg1npcmusic/audio~
 END

@@ -50,7 +50,16 @@ Run <strong>WeInstall bg1npcmusic</strong> in your game folder to install the mo
 </div>
 <h2>Contents</h2>
 <div class="section">
-<p>The mod contains one component that will install all music from the package. Because most of the work is accomplished by external routines called by WeiDU, it's important that you do not close the window until the sound files are done processing. </p>
+<p>This mod contains a single component to install the audio files.  There are six options for installation:
+<ol>
+<li>Install all music 
+<li>Install only regular music (i.e., non-romance music)
+<li>Install only romance music (i.e., you will only get music for "lovetalks")
+<li>Install all music - short versions (short versions are 30 seconds long, normal versions are 1 minute long)
+<li>Install only regular music - short versions
+<li>Install only romance music - short versions
+</ol>
+<p>Because most of the work is accomplished by external programs called by WeiDU, it's important that you do not close the window until the sound files are done processing. </p>
 <p><strong>Musical Themes Used (those not listed are unknown):</strong></p>
 <ul>
   <li>Ajantis: <i>Federation Mission Failure</i> (from Star Trek: Starfleet Command) by Ron Jones </li>
@@ -102,11 +111,12 @@ Run <strong>WeInstall bg1npcmusic</strong> in your game folder to install the mo
     </div>
 		<h2>Version History</h2>
 	<div class="section">
-		<p><strong>Version 6 - February 1, 2015</strong></p>
+		<p><strong>Version 6 - February 5, 2015</strong></p>
 		<ul>
 		<li>Updated to WeiDU v237, VERSION, README</li>
 		<li>Reworked install procedure to use WeiDU's built-in HANDLE_AUDIO function</li>
         <li>BGEE compatibility</li>
+        <li>Added "short versions" of audio files as an install option</li>
         <li>Updated OSX sox binaries to version compatible with Intel-CPU Macs</li>
 		<li>Removal of obsolete .bat style install routines</li>
 		</ul>

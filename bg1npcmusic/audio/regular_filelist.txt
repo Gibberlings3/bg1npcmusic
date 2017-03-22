@@ -1,0 +1,29 @@
+For copyright reasons, the music files have been removed from the archive. 
+
+If you wish to add theme music for the "regular" NPC-PC dialogues, here are the filenames to use:
+
+ajant99.ogg
+alora99.ogg
+branw99.ogg
+coran99.ogg
+dynah99.ogg
+edwin99.ogg
+eldot99.ogg
+faldo99.ogg
+garri99.ogg
+imoen99.ogg
+jahei99.ogg
+kagain99.ogg
+khali99.ogg
+kivan99.ogg
+minsc99.ogg
+monta99.ogg
+quayl99.ogg
+safana99.ogg
+shart99.ogg
+skie99.ogg
+tiax99.ogg
+vicon99.ogg
+xannn99.ogg
+xzar99.ogg
+yesli99.ogg

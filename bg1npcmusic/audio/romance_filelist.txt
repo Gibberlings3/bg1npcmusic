@@ -1,0 +1,17 @@
+For copyright reasons, the music files have been removed from the archive. 
+
+If you wish to add theme music for the NPC-PC romance dialogues, here are the filenames to use:
+
+ajrom.ogg
+brar1.ogg
+brar2.ogg
+brrom.ogg
+coranb.ogg
+coranf.ogg
+corang.ogg
+corann.ogg
+dyrom1.ogg
+dyrom2.ogg
+shrar.ogg
+xanro1.ogg
+xarom.ogg
